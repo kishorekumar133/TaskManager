@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="hello.css">
+  <style>
+    .d4 {
+      width: 100px;
+     margin-left: 600px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .timer {
+      margin-left: 600px;
+      margin-top: 20px;
+    }
+  
+    .btnn {
+      margin-left: 600px;
+      margin-top: 20px;
+    }
+
+    .input {
+      margin-left: 600px;
+      margin-bottom: 5px;
+      box-sizing: border-box;
+    }
+
+    .hel {
+      margin-left: 600px;
+    }
+
+    .tb1 {
+      margin-left: 600px;
+      margin-top: 20px;
+    }
+
+    .ffff {
+      margin-left: 600px;
+      margin-top: 20px;
+    }
+
+    .bt {
+     /* margin-left: 600px; */
+      margin-top: 20px;
+    }
+
+    .sw {
+      margin-left: 600px;
+      margin-top: 20px;
+    }
+
+    .bbb {
+      margin-left: 600px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .hea{
+      margin-left: 600px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="over">
+ 
+<div class="hea">
+  <h1>Task Manager</h1>
+</div>
+  <select name="task" id="task" class="input" required>
+    <option value="">Task</option>
+    <option value="IV">IV</option>
+    <option value="Project">Project</option>
+    <option value="Internship">Internship</option>
+    <option value="Dhuruva">Dhurva</option>
+    <!-- <option value=""></option> -->
+  </select><br>
+  <!-- </div> -->
+  <!-- <div class="d2"> -->
+  <input class="input" type="text" id="description" name="description" placeholder="Description" value="" required><br>
+  <!-- </div> -->
+
+  <div id="sw" class="timer">00:00:00</div>
+
+  <div class="d4">
+    <button id="btn" class="bt" onclick="timer()">Start</button>
+    <button id="btnn" class="bt" onclick="reset()">Reset</button>
+
+  </div>
+
+
+  <div><button class="bbb" onclick="add(0)">Add</button>
+
+  </div>
+
+  <div class="hel">
+    <select name="filter" id="filter" class="btn">
+      <option value="">Filter All</option>
+      <option value="IV">IV</option>
+      <option value="Project">Project</option>
+      <option value="Internship">Internship</option>
+      <option value="Dhuruva">Dhurva</option>
+      <!-- <option value=""></option> -->
+    </select><button class="btns" onclick="add(1)">Apply</button>
+    <div class="d3">
+      <table id="tb2"></table>
+    </div>
+  </div>
+  <table id="tb1" class="tb1" border="3">
+    <tr>
+      <th>Task</th>
+      <th>Description</th>
+      <th>Duration</th>
+      <th>Delete</th>
+    </tr>
+  </table>
+
+
+  <script src="hello.js">
+  </script>
+ 
+  </div>
+</body>
+
+</html>
